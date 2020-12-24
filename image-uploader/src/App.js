@@ -51,7 +51,7 @@ function Dropzone({userProfileId}) {
       console.log("File uploaded successfully")
     }).catch(err => {
       console.log(err);
-    })
+    });
   }, [])
   const {getRootProps, getInputProps, isDragActive} = useDropzone({onDrop})
 
